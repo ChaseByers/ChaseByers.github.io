@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+    <head>
+        <title>Selectors</title>
+        <meta charset="UTF-8">
+        <style>
+          p {
+            color: red;
+          }
+          #my-id {
+            color:blue;
+          }
+          .my-class {
+            color:green;
+          }
+          a[target="_blank"] {
+              background-color: yellow;
+          }
+          a:hover {
+            background-color:pink;
+          }
+        </style>
+
+    </head>
+    <body>
+      <p>This is my paragraph</p>
+      <div id="my-id">This is a div with the id selector "my-id"</div>
+      <div class="my-class">This is a div with the class selector "my-class"</div>
+      <a href="http://google.com">A link to Google</a>
+      <a href="http://google.com" target="_blank">Another link to Google</a>
+      <p>This is another paragraph with a <a href="google.html">link</a></p>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+/*style sheet for CSSPoetry.html Exercise 5 */
+
+p {
+    color:blue;
+    font-size:2em;
+  }
+
+  /* indicates that it is a class */
+  .fire {
+      color: red;
+  }
+
+  .ice {
+      color: blue;
+    }
+
+  .left {
+      text-align: left;
+  }
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+/* Is this positioning okay? */
