@@ -1,28 +1,21 @@
-/*style sheet for CSSPoetry.html Exercise 5 */
+<style>
+  div {
+    /* play with these values */
+    background-color: #c4bdb7;
+    width: 300px;
+    border: 15px solid #4f3928;
+    padding: 50px;
+    margin: 20px;
 
-p {
-    color:blue;
-    font-size:2em;
   }
 
-  /* indicates that it is a class */
-  .fire {
-      color: red;
+  a {
+
+    display: block;
+    width: 100px;
+    border: 5px solid #c4bdb7;
+    padding: 10px;
+    margin: 10px;
+
   }
-
-  .ice {
-      color: grey;
-    }
-
-  .left {
-      text-align: left;
-  }
-
-.right {
-  text-align: right;
-}
-
-.center {
-  text-align: center;
-}
-/* Is this positioning okay? */
+</style>
