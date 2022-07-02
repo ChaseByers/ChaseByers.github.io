@@ -1,21 +1,201 @@
-p{
-  font-family: 'helvetic neue', helvetica, sans-serif;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
-  border: 2px solid rgba(0,0,100,0.6);
-  background:black;
-  color:red;
-  box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
-  border-radius: 10px;
-  padding: 3px 10px;
-  display: inline-block;
-  cursor: pointer;
+body, html {height:100%; margin:0;}
+
+body {}
+
+section {
+  display:block;
+  width:100%;
+  text-align:center;
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border:solid black;
+  height:105%;
+}
+section.left {
 }
 
-#background {
+article {
+  box-shadow:1px 1px 5px rgba(0,0,0,.5);
+  max-width:62em;
+  margin:auto;
+  padding:1em 2.2em;
+  background:#faf5e5;
+  background:solid white;
+
+}
+
+.button-wrapper {
+text-align:center;
+margin:5px;
+}
+
+section a {
+  display:inline-block;
+background:#911;
+  border:solid 1px #ddd;
+color:white;
+font-size:1.5em;
+padding:.5em .6em;
+  margin:2px;
+  border-radius:0.25em;
+  margin:auto;
+  box-shadow: inset 0 2px 4px 2px rgba(255,255,255,.3), 0 2px 2px rgba(0,0,0,.5);
+}
+
+section a:active {
+    box-shadow: inset 0 2px 4px 2px rgba(10,10,10,.3), 0 2px 2px rgba(0,0,0,.5);
+
+}
+
+h1, h2, h3, h4, h5 {
+ font-family: 'Georgia', serif;
+line-height:1.05;
+  margin:.1em auto .25em;
+}
+h1 { font-size:32px;}
+h2 { font-size:30px; }
+
+p {
+font-size:28px;
+ font-family: 'Georgia', sans-serif;
+  margin:.4em auto;
+}
+
+body {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 1;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.9s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(2) {
+  animation: fade-in 0.9s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(3) {
+  animation: fade-in 0.9s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(4) {
+  animation: fade-in 0.9s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(5) {
+  animation: fade-in 0.9s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(6) {
+  animation: fade-in 0.9s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(7) {
+  animation: fade-in 0.9s 0.s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    filter: blur(0);
+  }
+}
+/* Transition 1, hover feature changes the color every text in every button */
+a {
+  color: #2F56B0;
+  position: relative;
+  transition: color .4s ease-out;
+}
+
+a:hover {
+  color: #457DFB;
+}
+
+a:hover:after {
+  border-color: #457DFB;
+}
+
+
+/* Believe his is necessary to create the button class even though there is nothing inside */
+.btn {
+
+   }
+   .btn:hover {
+     transform: translateY(-10px);
+   }
+
+#page1 {
   display:block;
-  background:url(https://media.istockphoto.com/photos/international-race-track-picture-id1156933946?k=20&m=1156933946&s=612x612&w=0&h=bVhv4K9fW3C7cIWc1ASScP44KAS0c9-hNc_wMYsEu5s=)  0 7.5em no-repeat ;
+ background:url(https://d.ibtimes.co.uk/en/full/1527766/game-thrones-dragons.jpg?w=1600&h=1600&q=88&f=ff76df5d9bb4b8501405c49b8c8e2afc)  0 7.5em no-repeat ;
   background-size:100%;
-  
+  color:skyBlue;
+  background-color:#130;
+}
+#page1 article{
+  background:none;
+  box-shadow:none;
+  text-shadow:2px 2px #000;
+}
+
+
+#page2 { background:url(http://www.storytrender.com/wp-content/uploads/2018/06/5_CATERS_REAL_LIFE_SAND_CASTLE_06.jpg) #156 center;
+background-size: 100%;
+}
+
+#page3 {
+  background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9cYPSG3P7Yap5cz2z9cHEIgCe7UcZ3S_y_w&usqp=CAU)
+}
+
+#page4 {
+  background:url(https://www.rkymtncat.com/wp-content/uploads/2014/05/Smores.jpg)
+
+}
+
+#page5 {
+  background: url(https://media.blogto.com/articles/522c-2016528-white-water-toronto.jpg?w=2048&cmd=resize_then_crop&height=1365&quality=70);
+}
+
+#page6 {
+  background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIMo1PX6zDGbE6a81FYx_aXtnl7OIiaNlUAQ&usqp=CAU)
+}
+
+#page7 {
+  background:url(https://powersponsorship.com/wp-content/uploads/2015/10/Sandcastle-scaled.jpg)
+}
+
+#page8 {
+  background:url(https://www.liherald.com/uploads/original/20180712-144610-GC%20Lifeguard%207_12.JPG);
+}
+
+#page9 {
+  background:url(https://img.freepik.com/free-photo/little-angry-girl-leaves-sea-does-want-swim-cold-water-copy-space-toned-photo_260418-2856.jpg);
+}
+
+#page10 {
+  background: url(https://i0.wp.com/www.kerrimatt.com/wp-content/uploads/2015/10/image432.png);
+}
+
+#page11 {
+  background:url(https://chabadintown.org/wp-content/uploads/2018/02/Depositphotos_11201357_m-2015-1.jpg);
+}
+
+#page12 {
+  background:url(https://t3.ftcdn.net/jpg/00/71/10/96/360_F_71109621_5iSRwXOx0gAU0shkz37p3dya96qN6lA2.jpg);
+}
+
+#page13 {
+  background:none;
 }
